@@ -21,7 +21,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 //Modify your URL here
-var hostURL = "https://7536c4c0-03fa-41ac-90c2-699b6b66cea7-00-2rdhjawewu3a9.sisko.replit.dev";
+var hostURL = "https://track-down-496f3a39647f.herokuapp.com";
 //TOGGLE for Shorters
 var use1pt = false;
 
