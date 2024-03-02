@@ -15,6 +15,7 @@ var urlencodedParser = bodyParser.urlencoded({
   type: "application/x-www-form-urlencoded",
 });
 const app = express();
+var PORT = process.env.PORT || 8080 || 5000 || 3000
 app.use(jsonParser);
 app.use(urlencodedParser);
 app.use(cors());
@@ -264,6 +265,6 @@ app.post("/camsnap", (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("App Running on Port 5000!");
-});
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:` + PORT)
+	})
